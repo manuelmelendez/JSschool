@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Rocket 🚀</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="header__img" src="assets/logo-platzi-video-BW2.png" alt="Logo Platzi-Video">
+      </a>
+      <nav class="header__navbar">
+        <img
+          class="header__navbar-usericon"
+          src="assets/icons8-verifique-el-macho-64.png"
+          alt="Login User"
+        />
+        <p>Perfil</p>
+        <ul>
+          <li><a href="/login.html">Cuenta</a></li>
+          <li><a href="/error.html">Cerrar Sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main-section-login">
+        <form action="" class="login__container--form">
+          <h2>Inicia Sesión</h2>
+          <input
+            placeholder="Correo"
+            type="email"
+            name="email-user"
+            id="email-user"
+          />
+          <input
+            placeholder="Contraseña"
+            type="password"
+            name="password-user"
+            id="password-user"
+          />
+          <button class="button">Iniciar sesión</button>
+          <div class="login__container--remember">
+            <label for="">
+              <input
+                type="checkbox"
+                name="remember-pass"
+                id="checkbox1"
+                value="checkbox"
+              >Recúerdame
+            </label>
+            <a href="/">Olvidé mi contraseña</a>
+          </div>
+          <section class="login__container--register">
+            <div>
+              <img
+                src="https://img.icons8.com/doodle/48/000000/google-logo.png"
+                alt="logo-google"
+              /> Inicia sesión con Google
+            </div>
+            <div>
+              <img
+                src="https://img.icons8.com/color/48/000000/twitter.png"
+                alt="logo-twitter"
+              /> Inicia sesión con Twitter            
+            </div>
+            <p>No tienes ninguna cuenta <a href="/register.html">Regístrate</a></p>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__a" href="">Contáctanos</a>
+      <a class="footer__a" href="">Política de Privacidad</a>
+      <a class="footer__a" href="">Terminos y condiciones</a>
+    </footer>
+  </body>
+</html>
