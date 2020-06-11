@@ -48,8 +48,13 @@ body {
   margin: 10px 0px;
 }
 
+header a {
+  width: 40%;
+}
+
 .header__img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   flex: 0.3;
 }
 
