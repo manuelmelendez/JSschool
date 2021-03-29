@@ -27,15 +27,13 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 body {
   background: var(--main-colorLinearGradient1);
   font-family: "Muli", sans-serif;
+  position: relative;
 }
 
 /*----------------------------------------------Header*/
@@ -48,8 +46,13 @@ body {
   margin: 10px 0px;
 }
 
+header a {
+  width: 40%;
+}
+
 .header__img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   flex: 0.3;
 }
 
@@ -149,7 +152,7 @@ p::first-letter {
 .main-section-carousel {
   width: 100%;
   overflow-x: scroll;
-  overflow-y: scroll;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -228,6 +231,70 @@ opacity: 0.3;}
 
 .carousel-item__details:hover {
   opacity: 1;
+}
+
+/*----------------------------------------------Promo Section*/
+
+.promotion{
+  /* border: 1px red solid; */
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 40px;
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0.6), rgba(30, 83, 114, 1)),
+  url("https://ideakreativa.net/wp-content/uploads/2019/05/laptos-para-disenadores-graficos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;    
+  /* box-shadow: inset 0px 0px 600px 250px #431f72; */
+      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.promotion-container {
+  width: 100%;
+  max-width: 1240px;
+  height: 100%;
+/*     border: 1px red solid;    */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px red solid; */
+  
+}
+
+.promotion-container img{
+  width: 50%;
+  border-radius: 15px 15px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2), 0px -5px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.promotion-container h2{
+  width: auto;
+  color: var(--main-color);
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3), 0px -5px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.promotion-container button {
+  background-color: var(--main-colorAcrylic1);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 40px;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  height: 40px;
+  color: var(--main-color)
+}
+
+.promotion-container button:hover{
+  background-color: var(--main-color);
+  color: var(--main-colorLinerGradientAcrylic1);
 }
 
 /*----------------------------------------------Main-Section-Login*/
@@ -377,7 +444,7 @@ padding-top: 40px;
 /*----------------------------------------------Footer*/
 
 .footer {
-  height: 10%;
+  height: 4rem;
   flex: 1;
   display: flex;
   justify-content: space-evenly;
